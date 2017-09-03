@@ -1,0 +1,36 @@
+.user-list{
+  display:flex;
+  padding:0;
+  margin:0;
+  list-style-type: none;
+}
+
+.user-list__item{
+  width:250px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right:20px;
+}
+
+.user-list__img{
+  height:100px;
+  object-fit: cover;
+}
+.user-repo{
+  overflow: hidden;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-repo li{
+  transform: translateX(-350px);
+  transition:0.6s;
+}
+.user-repo.opened li{
+  transform: translateX(0px);
+}
+.user-repo__title{
+  cursor:pointer;
+}
